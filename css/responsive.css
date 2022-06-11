@@ -1,0 +1,97 @@
+@media (max-width: 1000px){
+    main .container-main div{
+        margin: auto;
+    }
+    main .container-main img{
+        display: none;
+    }
+    h2 {
+        margin-left: 50px;
+    }
+    div h3 {
+        margin-left: 50px;
+    }
+    form{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-top: 30px;
+        text-align: center;
+        flex-direction: column;
+    }
+    input {
+        margin:12px;
+    }
+}
+
+@media (min-height: 631px) {
+    .container-menu{
+        display: none;
+    }
+}
+@media (max-width: 1000px) {
+    .container {
+        padding: 0px 20px;
+    }
+}
+@media (max-width: 630px) {
+    nav {
+        display: none;
+    }
+    main .container-menu img{
+        display: none;
+    }
+    .container-menu{
+        height: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #checkbox-menu {
+        position: absolute;
+        opacity: 0;
+    }
+
+    label{
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 22px;
+        width: 30px;
+    }
+
+    label span{
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        background: white;
+        border-radius: 30px;
+        transition: 0.25s ease-in-out;
+    }
+
+    label span:nth-child(1){
+        top: 0;
+    }
+    label span:nth-child(2){
+        top: 8px;
+    }
+    label span:nth-child(3){
+        top: 16px;
+    }
+
+    #checkbox-menu:checked + label span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 8px
+    }
+    #checkbox-menu:checked + label span:nth-child(2){
+        opacity: 0;
+    }
+    #checkbox-menu:checked + label span:nth-child(3){
+        transform: rotate(45deg);
+        top: 8px
+    }
+
+  
+}
